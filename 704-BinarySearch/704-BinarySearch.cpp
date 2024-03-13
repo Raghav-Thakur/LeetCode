@@ -3,16 +3,15 @@
             if (nums[mid]==target) {
         int mid = 0;
         int s= 0, e= nums.size() -1;
-            if (nums[0] == target) {
-        }
-                return 0;
-            }
-            else {
-                return -1;
-            }
+    int search(vector<int>& nums, int target) {
+public:
+class Solution {
                 return mid;
             }
             else if (nums[mid] > target) {
                 e = mid - 1;
+            }
+            else if (nums[mid] < target) {
+                s = mid + 1;
             }
 [
